@@ -8,6 +8,10 @@ import {
   Menu,
   Sun,
   Moon,
+  Mail, // Mail icon for "Contact Us"
+  FileText, // FileText icon for "Terms and Conditions"
+  Shield, // Shield icon for "Privacy Policy"
+  RefreshCw, // RefreshCw icon for "Refund Policy"
 } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -56,9 +60,28 @@ const SideNav = () => {
     },
     {
       id: 6,
-      name: "Privacy Policy", // New Menu Option
-      path: "/privacy-policy", // New path
-      icon: ShieldPlus, // You can change the icon if needed
+      name: "Privacy Policy",
+      path: "/privacy-policy",
+      icon: Shield, // Changed icon for Privacy Policy
+    },
+    {
+      id: 7,
+      name: "Terms and Conditions",
+      path: "/terms-and-conditions",
+      icon: FileText, // Changed icon for Terms and Conditions
+    },
+    {
+      id: 8,
+      name: "Refund Policy",
+      path: "/refund-policy",
+      icon: RefreshCw, // Changed icon for Refund Policy
+    },
+    // New "Contact Us" option
+    {
+      id: 9,
+      name: "Contact Us",
+      path: "/contact-us",
+      icon: Mail, // Mail icon for Contact Us
     },
   ];
 
