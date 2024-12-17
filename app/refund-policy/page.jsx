@@ -3,7 +3,7 @@ import Header from '../dashboard/_components/Header'
 
 const RefundPolicy = () => {
   return (
-    <div className="min-h-screen text-gray-900">
+    <div className="min-h-screen text-gray-500">
         <Header />
         <div className="max-w-3xl mx-auto p-6">
     <h2 class="text-2xl font-semibold mb-4">Refund Policy</h2>
