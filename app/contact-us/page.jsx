@@ -15,7 +15,7 @@ const ContactPage = () => {
     <div class=" text-gray-500 grid grid-cols-1 md:grid-cols-2 gap-8">
       <div class="shadow-lg rounded-lg p-6">
         <h3 class="text-2xl font-semibold mb-4">Send Us a Message</h3>
-        <form action="vidematic.ai1@gmail.com" method="POST">
+        <form action="videomatic.ai1@gmail.com" method="POST">
           <div class="mb-4">
             <label for="name" class="block text-gray-700 font-medium">Full Name</label>
             <input type="text" id="name" name="name" required class="w-full px-4 py-2 border rounded-md focus:ring-blue-500 focus:border-blue-500" placeholder="Enter your full name" />
@@ -42,7 +42,7 @@ const ContactPage = () => {
       <div class=" text-gray-500 shadow-lg rounded-lg p-6">
         <h3 class="text-2xl font-semibold mb-4">Our Contact Information</h3>
         <div class="mb-4">
-          <p class="text-lg font-medium text-gray-700">Email: <a href="mailto:vidematic.ai1@gmail.com" class="text-blue-600">vidematic.ai1@gmail.com</a></p>
+          <p class="text-lg font-medium text-gray-700">Email: <a href="mailto:videomatic.ai1@gmail.com" class="text-blue-600">videomatic.ai1@gmail.com</a></p>
         </div>
         <div class="mb-4">
           <p class="text-lg font-medium text-gray-700">Phone: +91 7588888555</p>
