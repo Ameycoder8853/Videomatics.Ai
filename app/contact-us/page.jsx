@@ -8,12 +8,12 @@ const ContactPage = () => {
       <div class="max-w-4xl mx-auto p-5 font-sans">
     <h2 class="text-3xl font-semibold text-center mb-6">Contact Us</h2>
     
-    <p class="text-lg text-gray-700 mb-6 text-center">
+    <p class="text-lg text-gray-500 mb-6 text-center">
       If you have any questions, feel free to reach out to us using the form below. We&apos;ll get back to you as soon as possible.
     </p>
   
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <div class="bg-white shadow-lg rounded-lg p-6">
+    <div class=" text-gray-500 grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="shadow-lg rounded-lg p-6">
         <h3 class="text-2xl font-semibold mb-4">Send Us a Message</h3>
         <form action="vidematic.ai1@gmail.com" method="POST">
           <div class="mb-4">
@@ -39,7 +39,7 @@ const ContactPage = () => {
         </form>
       </div>
   
-      <div class="bg-white shadow-lg rounded-lg p-6">
+      <div class=" text-gray-500 shadow-lg rounded-lg p-6">
         <h3 class="text-2xl font-semibold mb-4">Our Contact Information</h3>
         <div class="mb-4">
           <p class="text-lg font-medium text-gray-700">Email: <a href="mailto:vidematic.ai1@gmail.com" class="text-blue-600">vidematic.ai1@gmail.com</a></p>
