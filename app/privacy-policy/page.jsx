@@ -4,7 +4,7 @@ import Header from '../dashboard/_components/Header';
 
 const PrivacyPolicy = () => {
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-900">
+    <div className="min-h-screen text-gray-500">
       <Header />
       <div className="max-w-3xl mx-auto p-6">
         <h1 className="text-3xl font-semibold text-center mb-6">Privacy Statement</h1>
