@@ -43,7 +43,7 @@ export const PlayerDialog = ({ playVideo, videoId }) => {
 
     return (
         <Dialog open={openDialog} onOpenChange={setOpenDialog}>
-            <DialogContent className=" flex flex-col items-center">
+            <DialogContent className="bg-white flex flex-col items-center">
                 <DialogHeader>
                     <DialogTitle className="text-3xl font-bold my-5">Your Video is Ready</DialogTitle>
                     <DialogDescription>
@@ -58,7 +58,6 @@ export const PlayerDialog = ({ playVideo, videoId }) => {
                                 inputProps={{
                                     ...videoData,
                                     setDurationInFrame: (frameValue) => {
-                                        console.log("Setting duration in frames:", frameValue);
                                         setDurationInFrame(frameValue);
                                     },
                                 }}
