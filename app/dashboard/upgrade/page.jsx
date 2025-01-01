@@ -177,6 +177,9 @@ const Upgrade = () => {
         {hasSubscription === false && (
           <div>
             <p className="text-gray-600 text-center mb-6">
+              *Kindly ignore this page if you already have a Subscription we are working on it 😊
+              </p>
+            <p className="text-gray-600 text-center mb-6">
               Unlock the full potential of our AI Video Generator.
             </p>
 
