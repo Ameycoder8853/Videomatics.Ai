@@ -165,7 +165,7 @@ const Upgrade = () => {
 
   return (
     <div className="flex items-center justify-center px-4">
-      <div className="max-w-md rounded-lg bg-white shadow-lg p-6">
+      <div className="max-w-md rounded-lg shadow-lg p-6">
         <h1 className="text-2xl font-bold text-gray-800 text-center mb-4">
           {hasSubscription === null
             ? "Loading..."
