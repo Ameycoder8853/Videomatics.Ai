@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import EmptyState from './_components/EmptyState';
 import Link from 'next/link';
 import { db } from '../db';
@@ -21,7 +21,6 @@ const Dashboard = () => {
         const result = await db.select().from(VideoData)
             .where(eq(VideoData?.createdBy, user?.primaryEmailAddress?.emailAddress));
 
-        console.log(result);
         setVideoList(result);
     };
 
@@ -50,3 +49,4 @@ const Dashboard = () => {
 }
 
 export default Dashboard;
+    
