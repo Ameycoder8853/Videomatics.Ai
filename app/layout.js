@@ -17,6 +17,12 @@ export default function RootLayout({ children }) {
     <ClerkProvider>
       <html lang="en">
         <Head>
+          {/* Google Site Verification */}
+          <meta
+            name="google-site-verification"
+            content="yZs0wiNLxFszEYk57J3HW6wSCP1KiQdcyo_Ee3owqvM"
+          />
+
           {/* Primary Meta Tags */}
           <title>{metadata.title}</title>
           <meta name="description" content={metadata.description} />
