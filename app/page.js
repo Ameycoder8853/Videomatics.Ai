@@ -20,8 +20,8 @@ const LandingPage = () => {
       {/* Header */}
       <div className='p-3 px-5 flex items-center justify-between shadow-md'>
         <div className='flex gap-3 items-center'>
-          <img src='/logo.jpeg' width="30" height="30" alt="Videomatic AI Logo"/> 
-          <h2 className='font-bold text-xl'>Videomatic AI</h2>
+          <img src='/logo.jpeg' width="30" height="30" alt="Videomatics AI Logo"/> 
+          <h2 className='font-bold text-xl'>Videomatics AI</h2>
         </div>
         <div className='flex gap-3 items-center'>
           <button 
