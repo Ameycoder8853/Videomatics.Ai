@@ -17,6 +17,10 @@ export default function RootLayout({ children }) {
     <ClerkProvider>
       <html lang="en">
         <Head>
+          {/* Favicon */}
+          <link rel="icon" href="/logo.svg" type="image/svg+xml" />
+          <link rel="shortcut icon" href="/logo.svg" type="image/svg+xml" />
+          
           {/* Google Site Verification */}
           <meta
             name="google-site-verification"
