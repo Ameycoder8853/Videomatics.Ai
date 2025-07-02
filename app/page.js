@@ -20,8 +20,8 @@ const LandingPage = () => {
       {/* Header */}
       <div className="p-3 px-5 flex items-center justify-between shadow-md bg-white sticky top-0 z-50">
         <div className="flex gap-3 items-center">
-          <img src="/logo.svg" width="30" height="30" alt="Videomatic AI Logo" />
-          <h2 className="font-bold text-xl">Videomatic AI</h2>
+          <img src="/logo.svg" width="30" height="30" alt="Videomatics AI Logo" />
+          <h2 className="font-bold text-xl">Videomatics AI</h2>
         </div>
         <div className="flex gap-3 items-center">
           <button
@@ -71,159 +71,83 @@ const LandingPage = () => {
             </div>
           </section>
 
-          {/* Stats Section */}
-          <section className="grid grid-cols-2 md:grid-cols-4 gap-8 py-12">
-            {[
-              { number: "5000+", label: "Active Users" },
-              { number: "20,000+", label: "Videos Generated" },
-              { number: "99%", label: "Satisfaction Rate" },
-              { number: "24/7", label: "Customer Support" },
-            ].map((stat, i) => (
-              <div key={i} className="text-center hover:scale-105 transition-transform duration-200">
-                <div className="text-4xl font-bold text-blue-700">{stat.number}</div>
-                <div className="text-gray-600">{stat.label}</div>
-              </div>
-            ))}
-          </section>
-
-          {/* Video Tutorial Section */}
-          <section id="video-tutorial" className="text-center space-y-6">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800">How Videomatic AI Works</h2>
-            <p className="text-gray-600 mb-4">
-              Watch this short video to see how easily you can create AI videos.
-            </p>
-            <div className="flex justify-center">
-              <div className="relative w-full md:w-[80%] lg:w-[70%] rounded-xl overflow-hidden shadow-xl">
-                <video
-                  controls
-                  className="w-full h-auto rounded-xl border"
-                  poster="/video-thumbnail.png"
-                >
-                  <source src="https://cdn.pixabay.com/video/2023/04/19/160294-823678247_large.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-            </div>
-          </section>
-
-          {/* Features Section */}
-          <section id="features">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Features You’ll Love</h2>
+          {/* Extended Section: Use Cases */}
+          <section className="bg-gray-100 rounded-xl p-10">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">Popular Use Cases</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
                 {
-                  title: "AI Script Generator",
-                  desc: "Generate compelling video scripts instantly using Gemini AI.",
+                  title: "Reels & Shorts",
+                  desc: "Perfect for social creators looking to boost engagement with AI-generated short videos."
                 },
                 {
-                  title: "Voiceovers by AI",
-                  desc: "Create realistic voices with ElevenLabs voice models.",
+                  title: "Marketing Videos",
+                  desc: "Promote your product or service using automated video workflows and voiceovers."
                 },
                 {
-                  title: "Auto Visuals",
-                  desc: "Convert scripts into scenes using SDXL Lightning AI images.",
+                  title: "Educational Content",
+                  desc: "Create quick explainer videos with subtitles, captions, and visuals in just minutes."
                 },
                 {
-                  title: "Remotion Preview",
-                  desc: "Preview your videos in-browser before rendering in the cloud.",
+                  title: "Product Demos",
+                  desc: "Turn text instructions into demo walkthroughs instantly."
                 },
                 {
-                  title: "Social Formats",
-                  desc: "Perfect for Reels, YouTube Shorts, TikToks and more.",
+                  title: "Real Estate Showcases",
+                  desc: "Generate beautiful walkthroughs from photos or property scripts."
                 },
                 {
-                  title: "Cloud Render + Download",
-                  desc: "Render videos via Google Cloud and download anytime.",
-                },
+                  title: "Client Proposals",
+                  desc: "Send video-based pitches that convert better than PDFs or decks."
+                }
               ].map((item, index) => (
-                <div
-                  key={index}
-                  className="bg-white p-6 rounded-xl border shadow hover:shadow-lg transition duration-300"
-                >
-                  <h3 className="text-xl font-semibold mb-2 text-blue-700">{item.title}</h3>
+                <div key={index} className="bg-white p-6 rounded-lg shadow-md">
+                  <h3 className="text-xl font-semibold text-blue-700 mb-2">{item.title}</h3>
                   <p className="text-gray-600">{item.desc}</p>
                 </div>
               ))}
             </div>
           </section>
 
-          {/* How It Works Section */}
-          <section className="space-y-10">
-            <h2 className="text-3xl md:text-4xl font-bold text-center">How It Works</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {[
-                {
-                  step: "01",
-                  title: "Upload Your Input",
-                  description: "Start with your idea, product, or script.",
-                },
-                {
-                  step: "02",
-                  title: "Let AI Generate",
-                  description: "Videomatic handles voice, visuals, and captions.",
-                },
-                {
-                  step: "03",
-                  title: "Render & Download",
-                  description: "Preview, render in cloud, and download instantly.",
-                },
-              ].map((item, index) => (
-                <div key={index} className="relative p-6 border rounded-xl">
-                  <div className="text-5xl font-bold text-blue-100 absolute top-0 left-0">
-                    {item.step}
-                  </div>
-                  <div className="relative z-10 pt-8">
-                    <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-                    <p className="text-gray-600">{item.description}</p>
-                  </div>
-                </div>
-              ))}
+          {/* Integration Section */}
+          <section className="text-center space-y-10">
+            <h2 className="text-3xl md:text-4xl font-bold">Seamless Integrations</h2>
+            <p className="text-gray-600 max-w-xl mx-auto">
+              Videomatics AI works great with your favorite platforms.
+            </p>
+            <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-500">
+              <span className="px-6 py-2 border rounded-full">YouTube</span>
+              <span className="px-6 py-2 border rounded-full">Instagram</span>
+              <span className="px-6 py-2 border rounded-full">TikTok</span>
+              <span className="px-6 py-2 border rounded-full">Firebase</span>
+              <span className="px-6 py-2 border rounded-full">Razorpay</span>
+              <span className="px-6 py-2 border rounded-full">Remotion</span>
+              <span className="px-6 py-2 border rounded-full">AssemblyAI</span>
+              <span className="px-6 py-2 border rounded-full">ElevenLabs</span>
+              <span className="px-6 py-2 border rounded-full">Gemini AI</span>
             </div>
           </section>
 
-          {/* Testimonials */}
-          <section className="bg-blue-50 rounded-3xl p-8 md:p-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">What Creators Say</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {[
-                {
-                  quote: "Videomatic AI has made my content creation 10x faster. Perfect for my Instagram reels.",
-                  author: "Amey Patil",
-                  role: "Founder & Creator",
-                },
-                {
-                  quote: "I use this tool daily for YouTube shorts. The voice and script quality is insane.",
-                  author: "Priya K.",
-                  role: "YouTuber",
-                },
-                {
-                  quote: "My agency saves hours per video. We now scale short-form content for clients easily.",
-                  author: "Rahul S.",
-                  role: "Agency Owner",
-                },
-              ].map((t, i) => (
-                <div
-                  key={i}
-                  className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300"
-                >
-                  <p className="text-gray-600 italic mb-4">"{t.quote}"</p>
-                  <div className="font-semibold">{t.author}</div>
-                  <div className="text-gray-500 text-sm">{t.role}</div>
+          {/* FAQ Section */}
+          <section className="bg-gray-50 p-10 rounded-xl space-y-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-center">Frequently Asked Questions</h2>
+            <div className="space-y-4 max-w-3xl mx-auto">
+              {[{
+                q: "Is Videomatics AI free to use?",
+                a: "Yes! You can create and preview videos for free. Rendering/download credits may apply."
+              },{
+                q: "Do I need video editing skills?",
+                a: "No. Our AI handles everything from voiceovers to visuals. You just give the idea."
+              },{
+                q: "Can I download videos?",
+                a: "Yes, rendered videos can be downloaded or shared directly."
+              }].map((item, i) => (
+                <div key={i} className="bg-white p-5 rounded-lg border">
+                  <h4 className="font-semibold text-blue-700 mb-1">Q: {item.q}</h4>
+                  <p className="text-gray-600">A: {item.a}</p>
                 </div>
               ))}
             </div>
-          </section>
-
-          {/* CTA Section */}
-          <section className="bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl p-10 md:p-16 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Create AI-Powered Videos?</h2>
-            <p className="text-lg mb-8">Join Videomatic AI and transform your content game.</p>
-            <button
-              onClick={(e) => handleNavigate(e, "/dashboard")}
-              className="bg-white text-blue-700 hover:bg-gray-100 font-medium rounded-full text-lg px-8 py-4 transition hover:scale-105"
-            >
-              Get Started for Free
-            </button>
           </section>
         </div>
       </main>
@@ -258,7 +182,7 @@ const LandingPage = () => {
             </div>
           </div>
           <div className="mt-10 pt-6 border-t border-gray-200 text-center text-gray-600">
-            <p>© 2025 Videomatic AI. All rights reserved.</p>
+            <p>© 2025 Videomatics AI. All rights reserved.</p>
           </div>
         </div>
       </footer>
